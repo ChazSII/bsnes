@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Downloads | BSNES</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary rounded mt-2 mx-2 mx-lg-auto">
+    <a class="navbar-brand pt-0" href="/">
+      <img src="/images/logo.png" height="100" alt="" class="d-none d-lg-inline">
+      <img src="/images/icon.png" width="30" alt="" class="d-lg-none">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav nav nav-pills text-shadow">
+        <li class="nav-item my-2 my-lg-auto text-center">
+          <a class="nav-link bg-light rounded text-cyan mx-2" 
+          href="/features">Features</a>
+        </li>
+        <li class="nav-item my-2 text-center">
+          <a class="nav-link bg-light rounded text-red mx-2"
+          href="/screenshots">Screenshots</a>
+        </li>
+        <li class="nav-item my-2 text-center">
+          <a class="nav-link bg-light rounded text-yellow mx-2"
+          href="/downloads">Downloads</a>
+        </li>
+        <li class="nav-item my-2 text-center">
+          <a class="nav-link bg-light rounded text-green mx-2" target="_blank"
+          href="https://github.com/bsnes-emu/bsnes">Contribute!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main-content" class="container pt-2 pt-md-3">
+    <h4 class="bg-cyan rounded text-light px-2 pb-1 text-shadow-sm" id="unique-features">Unique Features</h4>
+
+<ul>
+  <li>True Super Game Boy emulation (using the SameBoy core by Lior Halphon)</li>
+  <li>HD mode 7 graphics (by DerKoun) with optional supersampling</li>
+  <li>Low-level emulation of all SNES coprocessors (DSP-#, ST-01#, Cx4)</li>
+  <li>Multi-threaded PPU graphics renderer from <a href="https://www.reddit.com/r/emulation/comments/8zz5ip/byuu_i_wrote_a_new_snes_emulator_from_scratch/">csnes</a></li>
+  <li>Speed mode settings which retain smooth audio output (50%, 75%, 100%, 150%, 200%)</li>
+  <li>Built-in games database with thousands of game entries</li>
+  <li>Built-in cheat code database for hundreds of popular games (by mightymo)</li>
+  <li>Built-in save state manager with screenshot previews and naming capabilities</li>
+  <li>Customizable per-byte game mappings to support any cartridges, including prototype games</li>
+  <li>7-zip decompression support</li>
+  <li>Extensive Satellaview emulation, including BS Memory flash write and wear-leveling emulation</li>
+  <li>Optional higan gamepak support (standard game image files are also fully supported!)</li>
+  <li>Advanced mapping system allowing multiple bindings to every emulated input</li>
+</ul>
+
+<h4 class="bg-green rounded text-light px-2 pb-1 text-shadow-sm" id="standard-features">Standard Features</h4>
+
+<ul>
+  <li>MSU1 support</li>
+  <li>BPS and IPS soft-patching support</li>
+  <li>Save states with undo and redo support (for reverting accidental saves and loads)</li>
+  <li>OpenGL multi-pass pixel shaders</li>
+  <li>Several built-in software filters, including HQ2x (by MaxSt) and snes_ntsc (by blargg)</li>
+  <li>Adaptive sync and dynamic rate control for perfect audio/video synchronization</li>
+  <li>Just-in-time input polling for minimal input latency</li>
+  <li>Run-ahead support for removing internal game engine input latency</li>
+  <li>Support for Direct3D exclusive mode video</li>
+  <li>Support for WASAPI exclusive mode low-latency audio</li>
+  <li>Periodic auto-saving of game saves</li>
+  <li>Auto-saving of states when unloading games, and auto-resuming of states when reloading games</li>
+  <li>Sprite limit disable support</li>
+  <li>Cubic audio interpolation support</li>
+  <li>Optional high-level emulation of most SNES coprocessors</li>
+  <li>Optional emulation of flaws in older emulators for compatibility with older unofficial software</li>
+  <li>CPU, SA1, and SuperFX overclocking support</li>
+  <li>Frame advance support</li>
+  <li>Screenshot support</li>
+  <li>Cheat code search support</li>
+  <li>Movie recording and playback support</li>
+  <li>Rewind support</li>
+  <li>HiDPI support</li>
+  <li>Multi-monitor support</li>
+  <li>Turbo support for controller inputs</li>
+</ul>
+
+  </div>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span class="text-muted">
+        ©
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script> 
+        bsnes</span>
+    </div>
+  </footer>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

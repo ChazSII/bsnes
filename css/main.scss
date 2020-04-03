@@ -1,0 +1,13 @@
+---
+---
+
+@import "bootstrap/bootstrap";
+
+@media (min-width: 1200px) {
+    .navbar {
+        max-width: 990px;
+    }
+    .container {
+        max-width: 970px;
+    }
+}

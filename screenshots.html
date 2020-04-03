@@ -1,0 +1,38 @@
+---
+layout: default
+title: Screenshots
+---
+
+<h4 class="bg-red rounded text-light px-2 pb-1 text-shadow-sm">Gameplay</h4>
+
+<div class="row ml-3">
+  {% for gameplay in site.screenshots %}
+  {% if gameplay.type == "gameplay" %}
+  <div class="card col-10 col-md-3 mx-md-3 my-3">
+    <a target="_blank" href="{{ gameplay.image_path }}">
+      <img class="card-img-top pt-3" src="{{ gameplay.image_path }}">
+    </a>
+    <div class="card-body py-2">
+      <p class="card-text"><small class="text-muted">{{ gameplay.caption }}</small></p>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<h4 class="bg-green rounded text-light px-2 pb-1 text-shadow-sm">Interface</h4>
+
+<div class="row ml-3">
+  {% for ui in site.screenshots %}
+  {% if ui.type == "ui" %}
+  <div class="card col-10 col-md-3 mx-md-3 my-3">
+    <a target="_blank" href="{{ ui.image_path }}">
+      <img class="card-img-top pt-3" src="{{ ui.image_path }}">
+    </a>
+    <div class="card-body py-2">
+      <p class="card-text"><small class="text-muted">{{ ui.caption }}</small></p>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
