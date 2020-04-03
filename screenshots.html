@@ -9,8 +9,8 @@ title: Screenshots
   {% for gameplay in site.screenshots %}
   {% if gameplay.type == "gameplay" %}
   <div class="card col-10 col-md-3 mx-md-3 my-3">
-    <a target="_blank" href="{{ gameplay.image_path }}">
-      <img class="card-img-top pt-3" src="{{ gameplay.image_path }}">
+    <a target="_blank" href="{{ gameplay.image_path | relative_url }}">
+      <img class="card-img-top pt-3" src="{{ gameplay.image_path | relative_url }}">
     </a>
     <div class="card-body py-2">
       <p class="card-text"><small class="text-muted">{{ gameplay.caption }}</small></p>
@@ -26,8 +26,8 @@ title: Screenshots
   {% for ui in site.screenshots %}
   {% if ui.type == "ui" %}
   <div class="card col-10 col-md-3 mx-md-3 my-3">
-    <a target="_blank" href="{{ ui.image_path }}">
-      <img class="card-img-top pt-3" src="{{ ui.image_path }}">
+    <a target="_blank" href="{{ ui.image_path | relative_url }}">
+      <img class="card-img-top pt-3" src="{{ ui.image_path | relative_url }}">
     </a>
     <div class="card-body py-2">
       <p class="card-text"><small class="text-muted">{{ ui.caption }}</small></p>
